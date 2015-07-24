@@ -1,1 +1,25 @@
-It's been modified.
+
+
+/**
+ *  This is a very very helpful category for NSTimer.
+ *
+ *  @author huangyibiao
+ *  @email  huangyibiao520@163.com
+ *  @github https://github.com/632840804
+ *  @blog   http://blog.csdn.net/woaifen3344
+ *
+ *  @note Make friends with me.
+ *        Facebook: huangyibiao520@163.com (Jacky Huang)
+ *        QQ:(632840804)
+ *        Weixin:(huangyibiao520)
+ *        Please tell me your real name when you send message to me.3Q.
+ */
+
+
+此项目中，提供了对于Masonary自动布局可自动cell的高度的功能。
+
+对于系统自带的autolayout，理论上一样可行的，不过未直接使用过系统的autolayout，如果大家在使用中可行，或者出现BUG，请联系作者，
+谢谢！！
+
+
+Thinks!
