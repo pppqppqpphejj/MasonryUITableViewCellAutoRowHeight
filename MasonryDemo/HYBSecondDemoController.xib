@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A216g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYBSecondDemoController">
+            <connections>
+                <outlet property="avgButton1" destination="lm7-Kn-zin" id="B0n-7o-Z8O"/>
+                <outlet property="avgButton2" destination="hNP-fA-X6W" id="VoF-eC-tw5"/>
+                <outlet property="avgButton3" destination="Z03-7A-Mk8" id="8Do-LU-8kU"/>
+                <outlet property="bgView" destination="HNn-29-grT" id="NoS-97-Ieg"/>
+                <outlet property="constraitButton" destination="nEV-Rm-pCU" id="11V-bp-kds"/>
+                <outlet property="label1" destination="HFq-Fj-JRx" id="B6e-5T-Dpt"/>
+                <outlet property="label2" destination="06S-NV-PNi" id="2gR-NH-sff"/>
+                <outlet property="noneConstraitButton" destination="Vaa-T1-WRG" id="EU5-ie-Vh4"/>
+                <outlet property="scLabel" destination="FFN-eC-KxX" id="sao-l5-Vf9"/>
+                <outlet property="scrollView" destination="LPN-U3-CCX" id="tVj-0g-vtg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEV-Rm-pCU">
+                    <rect key="frame" x="28" y="108" width="280" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.11647846324329081" blue="0.22823966082393687" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="按钮1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-T1-WRG">
+                    <rect key="frame" x="52" y="206" width="127" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.26640997124995025" blue="0.23549902379197019" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="与按钮1等宽等高">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeAvg:" destination="-1" eventType="touchUpInside" id="Ldp-vC-EOl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lm7-Kn-zin">
+                    <rect key="frame" x="15" y="381" width="127" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.082930922463045786" blue="0.080300150143793769" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="平分1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z03-7A-Mk8">
+                    <rect key="frame" x="260" y="381" width="127" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.17297754736991555" green="0.1857970446163949" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="平分3">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNP-fA-X6W">
+                    <rect key="frame" x="150" y="381" width="127" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.056576106861131126" green="1" blue="0.23592165229297224" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="平分2">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNn-29-grT">
+                    <rect key="frame" x="32" y="256" width="276" height="111"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFq-Fj-JRx">
+                            <rect key="frame" x="19" y="16" width="249" height="35"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.082930922460000001" blue="0.080300150139999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06S-NV-PNi">
+                            <rect key="frame" x="14" y="68" width="249" height="35"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.30268098098891327" green="0.93913274553419213" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.17297754739999999" green="0.18579704459999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPN-U3-CCX">
+                    <rect key="frame" x="23" y="59" width="285" height="204"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-eC-KxX">
+                            <rect key="frame" x="86" y="64" width="42" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-270" y="-11"/>
+        </view>
+    </objects>
+</document>
